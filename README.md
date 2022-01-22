@@ -1,4 +1,4 @@
-# Credit_Risk_Analysis
+# Credit Risk Analysis
 
 ## Background
 Jill commends you for all your hard work. Piece by piece, you’ve been building up your skills in data preparation, statistical reasoning, and machine learning. You are now ready to apply machine learning to solve a real-world challenge: credit card risk.
@@ -8,7 +8,7 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, you’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, you’ll use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once you’re done, you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Overview
-**_Explain the purpose of this analysis. _**
+**_Explain the purpose of this analysis._**
 
 The analysis purpose is to develop and show machine learning models in order to predict credit risk, using following methods for every procedure required: 
 
@@ -23,70 +23,70 @@ Through each method, we Will evaluate the performance of models in order to perf
 
 **_list resources used_**
 
-* **Data Source: ** LoanStats_2019Q1.csv
-* **Software: ** Jupyter Notebook 6.3.0, MELNV (python environment)
+* **Data Source:** LoanStats_2019Q1.csv
+* **Software:** Jupyter Notebook 6.3.0, MELNV (python environment)
 
 ## Results
 
-**_Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results. _**
+**_Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results._**
 
 ### Credit Risk Resampling
 
-   #### Naive Random Oversampling
-   * **Accuracy Score: ** 66.2%
-   * **Precision High Risk: ** 1%
+#### Naive Random Oversampling
+   * **Accuracy Score:** 66.2%
+   * **Precision High Risk:** 1%
    * **Precision Low Risk:** 100%
    * **Recall High Risk:** 72%
    * **Recall Low Risk:** 60%
 
-   ![](https://github.com/JulioAQuintana/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+   ![](https://github.com/JulioAQuintana/Credit_Risk_Analysis/blob/main/Resources/Naive%20Random%20Oversampling_1.png)
 
-   ####  SMOTE Oversampling
+####  SMOTE Oversampling
    * **Accuracy Score:** 65.6 %
    * **Precision High Risk:** 1%
    * **Precision Low Risk:** 100%
    * **Recall High Risk:** 61%
    * **Recall Low Risk:** 70%
 
-   ![](https://github.com/JulioAQuintana/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+   ![](https://github.com/JulioAQuintana/Credit_Risk_Analysis/blob/main/Resources/SMOTE%20Oversampling.png)
    
-      ####  Cluster Centroid Undersampling
+####  Cluster Centroid Undersampling
    * **Accuracy Score:** 54.4 %
    * **Precision High Risk:** 1%
    * **Precision Low Risk:** 100%
    * **Recall High Risk:** 69%
    * **Recall Low Risk:** 40%
 
-   ![](https://github.com/JulioAQuintana/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+   ![](https://github.com/JulioAQuintana/Credit_Risk_Analysis/blob/main/Resources/Cluster%20Centroid%20Undersampling.png)
    
-      ####  SMOTEENN Sampling
+####  SMOTEENN Sampling
    * **Accuracy Score:** 54.4 %
    * **Precision High Risk:** 1%
    * **Precision Low Risk:** 100%
    * **Recall High Risk:** 78%
    * **Recall Low Risk:** 57%
 
-   ![](https://github.com/JulioAQuintana/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+   ![](https://github.com/JulioAQuintana/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN%20Sampling.png)
 
 ### Credit Risk ensemble
 
-      ####  Balanced Random Forest Classifier
+####  Balanced Random Forest Classifier
    * **Accuracy Score:** 78.8%
    * **Precision High Risk:** 3%
    * **Precision Low Risk:** 100%
    * **Recall High Risk:** 70%
    * **Recall Low Risk:** 87%
 
-   ![](https://github.com/JulioAQuintana/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+   ![](https://github.com/JulioAQuintana/Credit_Risk_Analysis/blob/main/Resources/Balanced%20Random%20Forest%20Classifying.png)
   
-       ####  Easy Ensemble AdaBoost Classifier
+####  Easy Ensemble AdaBoost Classifier
    * **Accuracy Score:** 93.1
    * **Precision High Risk:** 9%
    * **Precision Low Risk:** 100%
    * **Recall High Risk:** 92%
    * **Recall Low Risk:** 94%
 
-   ![](https://github.com/JulioAQuintana/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+   ![](https://github.com/JulioAQuintana/Credit_Risk_Analysis/blob/main/Resources/Easy%20Ensemble%20AdaBoost%20Classifier.png)
 
 
 ## Summary
